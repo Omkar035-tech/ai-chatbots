@@ -3,6 +3,10 @@ import { config } from "../config";
 import { PersonaProfile, ChatMessageItem, SettingsState } from "./types";
 import archetypesData from "./archetypes.json";
 import { llmRouter } from "../llm/router";
+import { usernameGenerator, FORBIDDEN_USERNAME_REGEX } from "./usernames";
+import { messageBank } from "../bank/store";
+import { apiBudget } from "../llm/budget";
+import { batchJob } from "../pipeline/batch_job";
 import fs from "fs";
 import path from "path";
 
@@ -34,6 +38,12 @@ export class PersonaStore {
       this.isConnected = true;
       console.log("[Redis] Connected successfully to", config.redisUrl);
       llmRouter.setRedis(this.redis);
+      messageBank.setRedis(this.redis);
+      messageBank.init();
+      apiBudget.setRedis(this.redis);
+      batchJob.setRedis(this.redis);
+      usernameGenerator.setRedis(this.redis);
+      usernameGenerator.initPool();
     });
 
     this.redis.on("error", (err) => {
@@ -183,9 +193,17 @@ export class PersonaStore {
     try {
       const data = await this.redis.hgetall(`persona:${id}`);
       if (!data || !data.id) return null;
+      let personaName = data.name;
+      if (!personaName || FORBIDDEN_USERNAME_REGEX.test(personaName)) {
+        personaName = await usernameGenerator.getUsernameForPersona(data.id);
+        if (this.isConnected) {
+          await this.redis.hset(`persona:${data.id}`, "name", personaName);
+        }
+      }
+
       const profile: PersonaProfile = {
         id: data.id,
-        name: data.name,
+        name: personaName,
         color: data.color || "#38bdf8",
         age_group: data.age_group || "gen_z",
         vibe: data.vibe || "stream viewer",
@@ -255,18 +273,20 @@ export class PersonaStore {
 
       if (generated && Array.isArray(generated.personas)) {
         for (const raw of generated.personas) {
+          const id = raw.id || `p_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`;
+          const organicName = await usernameGenerator.getUsernameForPersona(id, raw.name);
           const profile: PersonaProfile = {
-            id: raw.id || `p_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
-            name: raw.name || `viewer_${Math.floor(Math.random() * 9000 + 1000)}`,
+            id,
+            name: organicName,
             color: raw.color || "#a855f7",
             age_group: raw.age_group || "gen_z",
             vibe: raw.vibe || "viewer",
             slang_style: raw.slang_style || "casual chat",
             typing_style: raw.typing_style || "standard",
-            emoji_rate: typeof raw.emoji_rate === "number" ? raw.emoji_rate : 0.3,
+            emoji_rate: typeof raw.emoji_rate === "number" ? raw.emoji_rate : 0.25,
             caps_rate: typeof raw.caps_rate === "number" ? raw.caps_rate : 0.1,
             reaction_bias: raw.reaction_bias || "hype",
-            catchphrases: Array.isArray(raw.catchphrases) ? raw.catchphrases : ["W"],
+            catchphrases: Array.isArray(raw.catchphrases) ? raw.catchphrases : ["no shot", "LMAO", "classic"],
             energy: typeof raw.energy === "number" ? raw.energy : 5,
             created_at: Date.now() + Math.floor(Math.random() * 50),
           };
@@ -283,22 +303,23 @@ export class PersonaStore {
       const stillNeeded = targetCount - afterCount;
       const colors = ["#38bdf8", "#a855f7", "#ec4899", "#22c55e", "#f97316", "#eab308", "#14b8a6", "#ef4444"];
       const biases = ["troll", "hype", "supportive", "lurker", "backseat", "joker", "skeptic"];
-      const typingStyles = ["lowercase_only", "hype_caps", "punctuation_free", "standard", "meme_heavy"];
+      const typingStyles = ["lowercase_casual", "caps_hype", "short_lurker", "question_asker", "meme_spammer"];
 
       for (let i = 0; i < stillNeeded; i++) {
         const id = `p_synth_${Date.now()}_${i}`;
+        const organicName = await usernameGenerator.getUsernameForPersona(id);
         const profile: PersonaProfile = {
           id,
-          name: `user_${Math.floor(Math.random() * 89999 + 10000)}`,
+          name: organicName,
           color: colors[i % colors.length],
           age_group: i % 2 === 0 ? "gen_z" : "millennial",
           vibe: "casual streamer enthusiast",
           slang_style: "twitch chatter slang",
           typing_style: typingStyles[i % typingStyles.length],
-          emoji_rate: 0.3,
+          emoji_rate: 0.2,
           caps_rate: 0.1,
           reaction_bias: biases[i % biases.length],
-          catchphrases: ["bro 💀", "W", "cooked"],
+          catchphrases: ["no shot", "clean", "wait what", "LMAO", "ggs"],
           energy: Math.floor(Math.random() * 8) + 2,
           created_at: Date.now() + i,
         };

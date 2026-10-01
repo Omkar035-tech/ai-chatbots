@@ -97,4 +97,52 @@ export class GroqProvider implements LLMProvider {
 
     throw lastError || new Error("All Groq models failed");
   }
+
+  async completeRaw(options: LLMRequestOptions): Promise<string> {
+    const apiKey = config.groq.apiKey;
+    if (!apiKey) throw new Error("GROQ_API_KEY is not configured");
+
+    const primaryModel = config.groq.model || "openai/gpt-oss-120b";
+    const modelsToTry = [primaryModel, "qwen/qwen3.8-27b", "openai/gpt-oss-20b"].filter(
+      (m, i, arr) => arr.indexOf(m) === i
+    );
+
+    for (const model of modelsToTry) {
+      const url = "https://api.groq.com/openai/v1/chat/completions";
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), options.timeoutMs ?? 10000);
+
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model,
+            messages: [
+              { role: "system", content: options.systemPrompt },
+              { role: "user", content: options.userPrompt },
+            ],
+            temperature: options.temperature ?? 0.7,
+            max_tokens: options.maxTokens ?? 2000,
+          }),
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          const errText = await response.text().catch(() => "");
+          if (response.status === 404) continue;
+          throw new Error(`Groq API error [${response.status}]: ${errText.slice(0, 200)}`);
+        }
+
+        const data = await response.json();
+        return data.choices?.[0]?.message?.content || "";
+      } finally {
+        clearTimeout(timeout);
+      }
+    }
+    return "";
+  }
 }

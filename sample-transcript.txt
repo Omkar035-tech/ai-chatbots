@@ -1,0 +1,16 @@
+# Sample streamer transcript for CrowdChat replay test harness
+# Format: [MM:SS] Transcript text [audioLevel: 0-100]
+[00:02] Welcome back everyone to the stream today we are grinding ranked matches audioLevel: 30
+[00:08] AAAAAAHHHH WHAT WAS THAT OMG NO NO NO jumpscare audioLevel: 95
+[00:14] Bro my heart literally stopped beating for two whole seconds audioLevel: 65
+[00:22] That thing came out of nowhere I did not see it at all audioLevel: 45
+[00:32] Okay let's take a breath and craft some ammo audioLevel: 25
+[00:44] Just checking my inventory right now seeing what we have audioLevel: 15
+[00:58] Walking through the quiet corridor nothing is happening audioLevel: 10
+[01:12] George fell off the table and turned into a potato audioLevel: 85
+[01:22] Wait did anyone clip that what did I just say audioLevel: 60
+[01:34] Chat what do you think should I push the boss or retreat to the safehouse? audioLevel: 55
+[01:46] Let me check what you guys are saying in chat audioLevel: 35
+[01:58] I am so sick and tired of this broken hitbox, I'm quitting, uninstalled rage quit audioLevel: 90
+[02:10] I cannot believe how laggy this server is today audioLevel: 50
+[02:25] GG everyone thanks for watching the stream see you tomorrow audioLevel: 35

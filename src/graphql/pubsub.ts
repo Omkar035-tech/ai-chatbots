@@ -9,6 +9,7 @@ export type PubSubEvents = {
   directorDecision: [DirectorDecisionResult];
   rosterUpdated: [PersonaProfile[]];
   providerStats: [ProviderStat[]];
+  hypeTelemetry: [any];
 };
 
 export const pubSub = createPubSub<PubSubEvents>();

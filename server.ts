@@ -12,6 +12,7 @@ import { typeDefs } from "./src/graphql/schema/typeDefs";
 import { resolvers } from "./src/graphql/resolvers";
 import { config } from "./src/server/config";
 import { personaStore } from "./src/server/personas/store";
+import { messageBank } from "./src/server/bank/store";
 import { pipelineOrchestrator } from "./src/server/pipeline/orchestrator";
 
 import { parse } from "url";
@@ -23,6 +24,7 @@ const port = config.port;
 async function bootstrap() {
   console.log("[Server] Initializing CrowdChat services...");
   await personaStore.init();
+  await messageBank.init();
   pipelineOrchestrator.init();
 
   delete process.env.TURBOPACK;

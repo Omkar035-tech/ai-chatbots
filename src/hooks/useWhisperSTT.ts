@@ -21,8 +21,12 @@ export function useWhisperSTT(options: UseWhisperSTTOptions = {}) {
   const optionsRef = useRef(options);
   optionsRef.current = options;
 
-  const audioChunksRef = useRef<Blob[]>([]);
   const isListeningRef = useRef<boolean>(false);
+  const isRecordingPhraseRef = useRef<boolean>(false);
+  const speechStartTimeRef = useRef<number>(0);
+  const lastSpeechTimeRef = useRef<number>(0);
+  const selectedMimeRef = useRef<string>("");
+  const audioChunksRef = useRef<Blob[]>([]);
 
   // Check initial permission state
   useEffect(() => {
@@ -38,12 +42,12 @@ export function useWhisperSTT(options: UseWhisperSTTOptions = {}) {
   }, []);
 
   const sendAudioChunk = useCallback(async (blob: Blob) => {
-    if (blob.size < 4000) return; // Ignore very small/silent chunks
+    if (blob.size < 1500) return; // Ignore very small / accidental clicks
 
     try {
       setIsProcessing(true);
       const formData = new FormData();
-      formData.append("file", blob, "chunk.webm");
+      formData.append("file", blob, "phrase.webm");
 
       const res = await fetch("/api/transcribe", {
         method: "POST",
@@ -57,8 +61,8 @@ export function useWhisperSTT(options: UseWhisperSTTOptions = {}) {
       }
 
       const data = await res.json();
-      if (data.text) {
-        console.log("[Whisper STT] Recognized text:", data.text);
+      if (data.text && data.text.trim()) {
+        console.log("[Whisper STT] Recognized phrase:", data.text);
         optionsRef.current.onTranscript?.(data.text);
       }
     } catch (e: any) {
@@ -68,15 +72,56 @@ export function useWhisperSTT(options: UseWhisperSTTOptions = {}) {
     }
   }, []);
 
-  const stopListening = useCallback(() => {
-    isListeningRef.current = false;
+  const startPhraseRecording = useCallback(() => {
+    if (!mediaStreamRef.current || !isListeningRef.current || isRecordingPhraseRef.current) return;
 
-    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
+    try {
+      const stream = mediaStreamRef.current;
+      const mime = selectedMimeRef.current;
+      const recorder = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream);
+
+      mediaRecorderRef.current = recorder;
+      audioChunksRef.current = [];
+      isRecordingPhraseRef.current = true;
+      speechStartTimeRef.current = Date.now();
+      lastSpeechTimeRef.current = Date.now();
+
+      recorder.ondataavailable = (e) => {
+        if (e.data && e.data.size > 0) {
+          audioChunksRef.current.push(e.data);
+        }
+      };
+
+      recorder.onstop = () => {
+        isRecordingPhraseRef.current = false;
+        if (audioChunksRef.current.length > 0) {
+          const finalBlob = new Blob(audioChunksRef.current, {
+            type: mime || "audio/webm",
+          });
+          audioChunksRef.current = [];
+          sendAudioChunk(finalBlob);
+        }
+      };
+
+      recorder.start();
+    } catch (err: any) {
+      console.warn("[Whisper STT] Failed to start phrase recorder:", err);
+      isRecordingPhraseRef.current = false;
+    }
+  }, [sendAudioChunk]);
+
+  const stopPhraseRecording = useCallback(() => {
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state === "recording") {
       try {
         mediaRecorderRef.current.stop();
       } catch {}
-      mediaRecorderRef.current = null;
     }
+    isRecordingPhraseRef.current = false;
+  }, []);
+
+  const stopListening = useCallback(() => {
+    isListeningRef.current = false;
+    stopPhraseRecording();
 
     if (mediaStreamRef.current) {
       mediaStreamRef.current.getTracks().forEach((track) => track.stop());
@@ -96,7 +141,7 @@ export function useWhisperSTT(options: UseWhisperSTTOptions = {}) {
     setAudioLevel(0);
     setIsListening(false);
     setIsProcessing(false);
-  }, []);
+  }, [stopPhraseRecording]);
 
   const startListening = useCallback(async () => {
     setError(null);
@@ -108,7 +153,6 @@ export function useWhisperSTT(options: UseWhisperSTTOptions = {}) {
     }
 
     try {
-      // 1. Request microphone hardware access
       console.log("[Whisper STT] Requesting getUserMedia...");
       const stream = await navigator.mediaDevices.getUserMedia({
         audio: {
@@ -123,33 +167,7 @@ export function useWhisperSTT(options: UseWhisperSTTOptions = {}) {
       isListeningRef.current = true;
       setIsListening(true);
 
-      // 2. Setup AudioContext for real-time visual meter
-      const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
-      if (AudioCtx) {
-        const ctx = new AudioCtx();
-        audioContextRef.current = ctx;
-        const source = ctx.createMediaStreamSource(stream);
-        const analyser = ctx.createAnalyser();
-        analyser.fftSize = 256;
-        source.connect(analyser);
-
-        const dataArray = new Uint8Array(analyser.frequencyBinCount);
-        const updateLevel = () => {
-          if (!isListeningRef.current) return;
-          analyser.getByteFrequencyData(dataArray);
-          let sum = 0;
-          for (let i = 0; i < dataArray.length; i++) {
-            sum += dataArray[i];
-          }
-          const avg = sum / dataArray.length;
-          const normalized = Math.min(100, Math.round((avg / 128) * 100));
-          setAudioLevel(normalized);
-          animFrameRef.current = requestAnimationFrame(updateLevel);
-        };
-        updateLevel();
-      }
-
-      // 3. Setup MediaRecorder for streaming to Groq Whisper
+      // Detect supported mime type once
       const mimeTypes = [
         "audio/webm;codecs=opus",
         "audio/webm",
@@ -164,31 +182,63 @@ export function useWhisperSTT(options: UseWhisperSTTOptions = {}) {
           break;
         }
       }
+      selectedMimeRef.current = selectedMime;
 
-      const recorder = selectedMime
-        ? new MediaRecorder(stream, { mimeType: selectedMime })
-        : new MediaRecorder(stream);
+      // Setup Web Audio API Analyser for real-time visual meter and VAD
+      const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
+      if (AudioCtx) {
+        const ctx = new AudioCtx();
+        audioContextRef.current = ctx;
+        const source = ctx.createMediaStreamSource(stream);
+        const analyser = ctx.createAnalyser();
+        analyser.fftSize = 256;
+        source.connect(analyser);
 
-      mediaRecorderRef.current = recorder;
-      audioChunksRef.current = [];
+        const dataArray = new Uint8Array(analyser.frequencyBinCount);
 
-      recorder.ondataavailable = (event) => {
-        if (event.data && event.data.size > 0) {
-          audioChunksRef.current.push(event.data);
-          // If we have collected enough audio chunks (~2.5s slice), package and send to Whisper
-          if (audioChunksRef.current.length >= 1) {
-            const combinedBlob = new Blob(audioChunksRef.current, {
-              type: selectedMime || "audio/webm",
-            });
-            audioChunksRef.current = [];
-            sendAudioChunk(combinedBlob);
+        const checkAudio = () => {
+          if (!isListeningRef.current) return;
+          analyser.getByteFrequencyData(dataArray);
+
+          let sum = 0;
+          for (let i = 0; i < dataArray.length; i++) {
+            sum += dataArray[i];
           }
-        }
-      };
+          const avg = sum / dataArray.length;
+          const normalized = Math.min(100, Math.round((avg / 128) * 100));
+          setAudioLevel(normalized);
 
-      // Slice audio every 2500ms for fast real-time transcription
-      recorder.start(2500);
-      console.log("[Whisper STT] MediaRecorder started successfully");
+          const now = Date.now();
+          const SPEECH_THRESHOLD = 7;
+          const PAUSE_THRESHOLD_MS = 650;
+          const MAX_PHRASE_MS = 4000;
+
+          if (normalized >= SPEECH_THRESHOLD) {
+            // Voice active
+            if (!isRecordingPhraseRef.current) {
+              startPhraseRecording();
+            } else {
+              lastSpeechTimeRef.current = now;
+              // Check if phrase has reached max duration (4 seconds)
+              if (now - speechStartTimeRef.current >= MAX_PHRASE_MS) {
+                stopPhraseRecording();
+              }
+            }
+          } else {
+            // Silence / below threshold
+            if (isRecordingPhraseRef.current) {
+              if (now - lastSpeechTimeRef.current >= PAUSE_THRESHOLD_MS) {
+                // Streamer paused after talking -> send phrase to Whisper
+                stopPhraseRecording();
+              }
+            }
+          }
+
+          animFrameRef.current = requestAnimationFrame(checkAudio);
+        };
+
+        checkAudio();
+      }
     } catch (err: any) {
       console.error("[Whisper STT] getUserMedia failed:", err);
       let msg = "Microphone access failed.";
@@ -203,7 +253,7 @@ export function useWhisperSTT(options: UseWhisperSTTOptions = {}) {
       optionsRef.current.onError?.(msg);
       stopListening();
     }
-  }, [sendAudioChunk, stopListening]);
+  }, [startPhraseRecording, stopPhraseRecording, stopListening]);
 
   // Cleanup on unmount
   useEffect(() => {

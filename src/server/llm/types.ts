@@ -32,4 +32,5 @@ export interface LLMRequestOptions {
 export interface LLMProvider {
   readonly name: string;
   completeJson(options: LLMRequestOptions): Promise<any>;
+  completeRaw?(options: LLMRequestOptions): Promise<string>;
 }

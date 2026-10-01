@@ -221,6 +221,52 @@ export class LLMRouter {
     this.activeProviderName = "local_fallback";
     return getLocalFallbackResponse(task, userPrompt, extraContext);
   }
+
+  public async complete_raw(
+    systemPrompt: string,
+    userPrompt: string,
+    maxTokens: number = 2000
+  ): Promise<string> {
+    const taskPriority = config.priority.writer;
+    const timeoutMs = 12000;
+
+    const orderedCandidateNames: string[] = [];
+    for (const p of taskPriority) {
+      if (this.providers.has(p)) {
+        orderedCandidateNames.push(p);
+      }
+    }
+    for (const p of ["gemini", "groq", "openrouter"]) {
+      if (!orderedCandidateNames.includes(p) && this.providers.has(p)) {
+        orderedCandidateNames.push(p);
+      }
+    }
+
+    for (const providerName of orderedCandidateNames) {
+      if (!this.isProviderAvailable(providerName)) continue;
+      const provider = this.providers.get(providerName)!;
+      if (typeof (provider as any).completeRaw !== "function") continue;
+
+      try {
+        const text = await (provider as any).completeRaw({
+          task: "writer",
+          systemPrompt,
+          userPrompt,
+          timeoutMs,
+          maxTokens,
+        });
+
+        if (text && text.trim().length > 0) {
+          this.recordSuccess(providerName);
+          return text;
+        }
+      } catch (err: any) {
+        this.recordFailure(providerName, err);
+      }
+    }
+
+    return "";
+  }
 }
 
 export const llmRouter = new LLMRouter();

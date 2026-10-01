@@ -1,26 +1,62 @@
 import { serverSTT, ServerTranscriptEvent } from "../stt";
-import { contextBuffer } from "./context_buffer";
-import { preFilter } from "./prefilter";
-import { director, DirectorDecisionResult } from "./director";
-import { personaSelector } from "./persona_selector";
-import { writer } from "./writer";
-import { safetyFilter } from "./safety";
+import { localHypeDetector, HypeMoment, SignalBreakdown } from "./hype_detector";
+import { localMatcher } from "./local_matcher";
+import { chatHumanizer } from "./humanizer";
 import { chatScheduler } from "./scheduler";
 import { personaStore } from "../personas/store";
-import { llmRouter } from "../llm/router";
+import { messageBank } from "../bank/store";
+import { batchJob } from "./batch_job";
+import { callbackManager } from "./callbacks";
+import { apiBudget } from "../llm/budget";
+import { reactiveCallGenerator } from "./reactive_call";
 import { pubSub } from "../../graphql/pubsub";
-import { PersonaProfile } from "../personas/types";
+import { llmRouter } from "../llm/router";
+
+export interface HypeTelemetryPayload {
+  score: number;
+  state: string;
+  signals: Array<{ name: string; value: number; weight: number; contribution: number }>;
+  momentQuote: string | null;
+  eventType: string | null;
+  intensity: number | null;
+  tierUsed: string;
+  bankTotalCount: number;
+  bankUnusedCount: number;
+  batchCyclesLastHour: number;
+  reactiveCallsLastHour: number;
+  totalApiCallsLastHour: number;
+  blockedRequestsCount: number;
+  ts: number;
+}
 
 export class PipelineOrchestrator {
-  private lastYesTs: number = 0;
-  private lastIntensity: number = 0;
+  private lastReactionTs: number = 0;
+  private lastTierUsed: string = "tier0";
+  private latestTelemetry: HypeTelemetryPayload;
   private isProcessing: boolean = false;
   private ambientInterval: NodeJS.Timeout | null = null;
   private statsInterval: NodeJS.Timeout | null = null;
   private nextAmbientThresholdSec: number = 60;
 
   constructor() {
-    // Setup scheduler callback to publish released messages
+    this.latestTelemetry = {
+      score: 0,
+      state: "IDLE",
+      signals: [],
+      momentQuote: null,
+      eventType: null,
+      intensity: null,
+      tierUsed: "none",
+      bankTotalCount: 500,
+      bankUnusedCount: 500,
+      batchCyclesLastHour: 0,
+      reactiveCallsLastHour: 0,
+      totalApiCallsLastHour: 0,
+      blockedRequestsCount: 0,
+      ts: Date.now(),
+    };
+
+    // Scheduler callback to publish released messages
     chatScheduler.setOnPublish((chatItem) => {
       pubSub.publish("chatMessage", chatItem);
     });
@@ -32,134 +68,117 @@ export class PipelineOrchestrator {
   }
 
   public init() {
+    // Start background batch refills
+    batchJob.startSchedule();
     this.startAmbientChatterLoop();
     this.startStatsLoop();
+    console.log("[Pipeline] Local Orchestrator initialized (Tier 0 Live + Tier 1 Batch + Tier 2 Reactive).");
+  }
+
+  public getTelemetry(): HypeTelemetryPayload {
+    return this.latestTelemetry;
   }
 
   private async handleTranscriptEvent(event: ServerTranscriptEvent) {
     // Publish transcript to GraphQL subscription for live UI feedback
     pubSub.publish("transcript", event.text);
 
-    // Add to rolling context buffer
-    contextBuffer.addTranscript(event.text, event.is_final, event.timestamp);
+    // Ingest into Redis Stream / memory buffer for Tier 1 batch processing
+    const audioLevel = (event as any).audioLevel || 0;
+    batchJob.appendTranscript(event.text, event.timestamp, audioLevel);
 
-    // Only final transcripts trigger the Director pipeline
-    if (event.is_final && event.text.trim()) {
-      await this.processTranscript(event.text.trim());
+    // Evaluate live transcript locally (0 API calls)
+    if (event.text.trim()) {
+      await this.processTranscript(event.text.trim(), audioLevel, event.timestamp, event.is_final);
     }
   }
 
-  public async processTranscript(text: string) {
-    if (this.isProcessing) {
-      console.log("[Pipeline] Currently busy processing a moment, queuing/skipping");
-      return;
-    }
-    this.isProcessing = true;
+  public async processTranscript(
+    text: string,
+    audioLevel: number = 0,
+    timestamp: number = Date.now(),
+    isFinal: boolean = true
+  ) {
+    const settings = await personaStore.getSettings();
+    if (!settings.enabled) return;
 
-    try {
-      const settings = await personaStore.getSettings();
-      if (!settings.enabled) {
-        return;
-      }
+    // 1. Evaluate with local multi-signal Hype Detector (0 LLM calls)
+    const evaluated = localHypeDetector.evaluate(text, audioLevel, timestamp);
 
-      // 1. Pre-filter evaluation
-      const preFilterResult = preFilter.evaluate(
-        text,
-        settings,
-        this.lastYesTs,
-        this.lastIntensity
-      );
+    // Prepare signals list for telemetry
+    const signalsList = Object.entries(evaluated.signals).map(([name, s]) => ({
+      name,
+      value: s.value,
+      weight: s.weight,
+      contribution: s.contribution,
+    }));
 
-      if (!preFilterResult.shouldEvaluate) {
-        console.log(`[Pipeline] Pre-filter skipped: ${preFilterResult.skipReason}`);
-        return;
-      }
+    // Update telemetry state
+    const budgetTelem = apiBudget.getTelemetry();
+    const bankUnused = await messageBank.getUnusedCount();
+    const bankTotal = await messageBank.getTotalCount();
 
-      // 2. Director evaluation
-      const recentTranscript = contextBuffer.getRecentTranscriptText(30) || text;
-      const rollingSummary = contextBuffer.getRollingSummary();
-      const timeSinceLastReaction = Date.now() - this.lastYesTs;
+    this.latestTelemetry = {
+      score: evaluated.score,
+      state: evaluated.state,
+      signals: signalsList,
+      momentQuote: evaluated.moment?.quote || null,
+      eventType: evaluated.moment?.event_type || null,
+      intensity: evaluated.moment?.intensity || null,
+      tierUsed: this.lastTierUsed,
+      bankTotalCount: bankTotal,
+      bankUnusedCount: bankUnused,
+      batchCyclesLastHour: budgetTelem.batchCyclesLastHour,
+      reactiveCallsLastHour: budgetTelem.reactiveCallsLastHour,
+      totalApiCallsLastHour: budgetTelem.totalCallsLastHour,
+      blockedRequestsCount: reactiveCallGenerator.getBlockedCount(),
+      ts: Date.now(),
+    };
 
-      const decision: DirectorDecisionResult = await director.evaluate(
-        recentTranscript,
-        rollingSummary,
-        preFilterResult.hints,
-        timeSinceLastReaction,
-        settings.momentDepth
-      );
+    pubSub.publish("hypeTelemetry", this.latestTelemetry);
 
-      pubSub.publish("directorDecision", decision);
+    // 2. If a moment is detected or peaked, trigger live reaction
+    if (evaluated.moment && isFinal) {
+      if (this.isProcessing) return;
+      this.isProcessing = true;
 
-      if (!decision.react) {
-        console.log(`[Pipeline] Director decided NO: ${decision.reason}`);
-        return;
-      }
+      try {
+        const activePersonas = await personaStore.getActivePersonas();
+        if (activePersonas.length === 0) return;
 
-      // Record reaction
-      this.lastYesTs = Date.now();
-      this.lastIntensity = decision.intensity;
-      await personaStore.setLastDirectorFireTs(this.lastYesTs);
+        // Match messages locally, fill slots, humanize, or escalate to Tier 2
+        const matchResult = await localMatcher.match(evaluated.moment, activePersonas, settings);
 
-      // 3. Persona Selector
-      const activePersonas = await personaStore.getActivePersonas();
-      if (activePersonas.length === 0) return;
+        if (matchResult.messages.length > 0) {
+          this.lastReactionTs = Date.now();
+          this.lastTierUsed = matchResult.tierUsed;
+          this.latestTelemetry.tierUsed = matchResult.tierUsed;
+          pubSub.publish("hypeTelemetry", this.latestTelemetry);
 
-      const selectedPersonas = await personaSelector.selectPersonas(
-        activePersonas,
-        decision.eventType,
-        decision.intensity,
-        decision.suggestedReactionTypes
-      );
+          // Schedule callback running jokes 20s to 5min later
+          if (evaluated.moment.entities && evaluated.moment.entities.length > 0) {
+            callbackManager.scheduleCallbacksForMoment(
+              evaluated.moment.moment_id,
+              evaluated.moment.entities,
+              settings.speedMultiplier
+            );
+          }
 
-      // 4. Writer Batch Generation
-      const rawMessages = await writer.generateChatBatch(
-        text,
-        decision.eventType,
-        decision.intensity,
-        selectedPersonas
-      );
+          // Schedule chat burst
+          chatScheduler.scheduleBatch(
+            matchResult.messages,
+            evaluated.moment.intensity,
+            settings.speedMultiplier
+          );
 
-      // 5. Safety Filter & Sanitation
-      const safeMessages: {
-        personaId: string;
-        username: string;
-        color: string;
-        text: string;
-        kind: string;
-      }[] = [];
-
-      const personaMap = new Map<string, PersonaProfile>();
-      for (const p of activePersonas) {
-        personaMap.set(p.id, p);
-      }
-
-      for (const raw of rawMessages) {
-        const persona = personaMap.get(raw.persona_id) || selectedPersonas[0];
-        const validation = await safetyFilter.validateMessage(raw.text, persona.id);
-
-        if (validation.valid) {
-          safeMessages.push({
-            personaId: persona.id,
-            username: persona.name,
-            color: persona.color,
-            text: validation.cleanedText,
-            kind: raw.kind || "hype",
-          });
-        } else {
-          console.warn(`[Pipeline] Safety filter dropped message: "${raw.text}" (${validation.reason})`);
+          // Check if message bank requires early refill
+          batchJob.checkLowWaterRefill().catch(() => {});
         }
+      } catch (err: any) {
+        console.error("[Pipeline] Error processing moment reaction:", err.message);
+      } finally {
+        this.isProcessing = false;
       }
-
-      // 6. Schedule burst
-      chatScheduler.scheduleBatch(
-        safeMessages,
-        decision.intensity,
-        settings.speedMultiplier
-      );
-    } catch (err: any) {
-      console.error("[Pipeline] Pipeline execution error:", err.message);
-    } finally {
-      this.isProcessing = false;
     }
   }
 
@@ -168,139 +187,114 @@ export class PipelineOrchestrator {
     const activePersonas = await personaStore.getActivePersonas();
     if (activePersonas.length === 0) return false;
 
-    let eventType = "hype";
+    let eventType: any = "win";
     let intensity = 7;
-    let suggestedReactions = ["hype"];
+    let quote = customText || `Streamer triggered ${kind} event!`;
 
     if (kind === "troll") {
       eventType = "rage";
       intensity = 8;
-      suggestedReactions = ["troll"];
     } else if (kind === "question") {
       eventType = "question";
       intensity = 5;
-      suggestedReactions = ["backseat", "supportive"];
-    } else if (kind === "simulated") {
-      if (customText) {
-        await this.processTranscript(customText);
-        return true;
-      }
+    } else if (kind === "funny" || kind === "absurd") {
+      eventType = "funny";
+      intensity = 8;
     }
 
-    const decision: DirectorDecisionResult = {
-      react: true,
-      eventType,
+    const syntheticMoment: HypeMoment = {
+      moment_id: `manual_${Date.now()}`,
+      start_ts: Date.now(),
+      peak_ts: Date.now(),
+      quote,
+      event_type: eventType,
       intensity,
-      reason: `Manual trigger: ${kind}`,
-      suggestedReactionTypes: suggestedReactions,
-      ts: Date.now(),
+      entities: localHypeDetector.extractEntities(quote),
+      absurd: kind === "absurd",
+      signals: {},
+      hype_score: intensity,
     };
 
-    pubSub.publish("directorDecision", decision);
+    const matchResult = await localMatcher.match(syntheticMoment, activePersonas, settings);
 
-    const selectedPersonas = await personaSelector.selectPersonas(
-      activePersonas,
-      eventType,
-      intensity,
-      suggestedReactions
-    );
-
-    const speechContext = customText || `Streamer triggered ${kind} event!`;
-    const rawMessages = await writer.generateChatBatch(
-      speechContext,
-      eventType,
-      intensity,
-      selectedPersonas
-    );
-
-    const safeMessages: {
-      personaId: string;
-      username: string;
-      color: string;
-      text: string;
-      kind: string;
-    }[] = [];
-
-    const personaMap = new Map<string, PersonaProfile>();
-    for (const p of activePersonas) personaMap.set(p.id, p);
-
-    for (const raw of rawMessages) {
-      const p = personaMap.get(raw.persona_id) || selectedPersonas[0];
-      const valid = await safetyFilter.validateMessage(raw.text, p.id);
-      if (valid.valid) {
-        safeMessages.push({
-          personaId: p.id,
-          username: p.name,
-          color: p.color,
-          text: valid.cleanedText,
-          kind: raw.kind || kind,
-        });
-      }
+    if (matchResult.messages.length > 0) {
+      this.lastReactionTs = Date.now();
+      this.lastTierUsed = matchResult.tierUsed;
+      chatScheduler.scheduleBatch(matchResult.messages, intensity, settings.speedMultiplier);
+      return true;
     }
 
-    chatScheduler.scheduleBatch(safeMessages, intensity, settings.speedMultiplier);
-    return true;
+    return false;
   }
 
   private startAmbientChatterLoop() {
     if (this.ambientInterval) clearInterval(this.ambientInterval);
 
-    this.nextAmbientThresholdSec = Math.floor(Math.random() * 75) + 45; // 45-120 seconds
+    this.nextAmbientThresholdSec = Math.floor(Math.random() * 45) + 35; // 35-80 seconds
 
     this.ambientInterval = setInterval(async () => {
       try {
         const settings = await personaStore.getSettings();
         if (!settings.enabled || !settings.ambientChatter) return;
 
-        const timeSinceLastReactionSec = (Date.now() - this.lastYesTs) / 1000;
+        const timeSinceLastReactionSec = (Date.now() - this.lastReactionTs) / 1000;
         if (timeSinceLastReactionSec >= this.nextAmbientThresholdSec) {
-          console.log("[Pipeline] Triggering ambient idle chatter...");
-          this.nextAmbientThresholdSec = Math.floor(Math.random() * 75) + 45;
+          this.nextAmbientThresholdSec = Math.floor(Math.random() * 50) + 35;
 
           const activePersonas = await personaStore.getActivePersonas();
           if (activePersonas.length === 0) return;
 
-          // Pick 1 persona for quiet idle comment
-          const randomPersona = activePersonas[Math.floor(Math.random() * activePersonas.length)];
-          const rawMsgs = await writer.generateChatBatch(
-            "Stream is quiet right now, chill gaming moment.",
-            "boring",
-            1,
-            [randomPersona]
-          );
+          // Pull candidate ambient message from Message Bank (0 API calls!)
+          const candidates = await messageBank.fetchCandidates("quiet", 1, 5);
+          if (candidates.length === 0) return;
 
-          if (rawMsgs.length > 0) {
-            const valid = await safetyFilter.validateMessage(rawMsgs[0].text, randomPersona.id);
-            if (valid.valid) {
-              chatScheduler.scheduleBatch(
-                [
-                  {
-                    personaId: randomPersona.id,
-                    username: randomPersona.name,
-                    color: randomPersona.color,
-                    text: valid.cleanedText,
-                    kind: rawMsgs[0].kind || "supportive",
-                  },
-                ],
-                1,
-                settings.speedMultiplier
-              );
-            }
+          const chosen = candidates[Math.floor(Math.random() * candidates.length)];
+          const persona = activePersonas[Math.floor(Math.random() * activePersonas.length)];
+
+          const humanized = chatHumanizer.humanizeMessage(chosen.text, persona, 1);
+          if (humanized.accepted) {
+            await messageBank.markUsed(chosen.id);
+            chatScheduler.scheduleBatch(
+              [
+                {
+                  personaId: persona.id,
+                  username: persona.name,
+                  color: persona.color,
+                  text: humanized.text,
+                  kind: "ambient",
+                },
+              ],
+              1,
+              settings.speedMultiplier
+            );
           }
         }
-      } catch {
-        // ignore ambient chatter error
+      } catch (err: any) {
+        console.warn("[Pipeline] Ambient loop error:", err.message);
       }
-    }, 15000);
+    }, 12000);
   }
 
   private startStatsLoop() {
     if (this.statsInterval) clearInterval(this.statsInterval);
 
-    this.statsInterval = setInterval(() => {
+    this.statsInterval = setInterval(async () => {
       const stats = llmRouter.getProviderStats();
       pubSub.publish("providerStats", stats);
-    }, 5000);
+
+      const budgetTelem = apiBudget.getTelemetry();
+      const bankUnused = await messageBank.getUnusedCount();
+      const bankTotal = await messageBank.getTotalCount();
+
+      this.latestTelemetry.batchCyclesLastHour = budgetTelem.batchCyclesLastHour;
+      this.latestTelemetry.reactiveCallsLastHour = budgetTelem.reactiveCallsLastHour;
+      this.latestTelemetry.totalApiCallsLastHour = budgetTelem.totalCallsLastHour;
+      this.latestTelemetry.bankTotalCount = bankTotal;
+      this.latestTelemetry.bankUnusedCount = bankUnused;
+      this.latestTelemetry.blockedRequestsCount = reactiveCallGenerator.getBlockedCount();
+
+      pubSub.publish("hypeTelemetry", this.latestTelemetry);
+    }, 3000);
   }
 }
 

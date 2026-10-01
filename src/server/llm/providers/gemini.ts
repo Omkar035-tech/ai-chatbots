@@ -91,4 +91,57 @@ export class GeminiProvider implements LLMProvider {
 
     throw lastError || new Error("All Gemini models failed");
   }
+
+  async completeRaw(options: LLMRequestOptions): Promise<string> {
+    const apiKey = config.gemini.apiKey;
+    if (!apiKey) throw new Error("GEMINI_API_KEY is not configured");
+
+    const primaryModel = config.gemini.model || "gemini-3.5-flash-lite";
+    const modelsToTry = [
+      primaryModel,
+      "gemini-flash-lite-latest",
+      "gemini-3.1-flash-lite",
+      "gemini-3.8-flash",
+    ].filter((m, i, arr) => arr.indexOf(m) === i);
+
+    for (const model of modelsToTry) {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), options.timeoutMs ?? 10000);
+
+      try {
+        const payload: any = {
+          contents: [
+            {
+              role: "user",
+              parts: [{ text: `${options.systemPrompt}\n\nUser Input:\n${options.userPrompt}` }],
+            },
+          ],
+          generationConfig: {
+            temperature: options.temperature ?? 0.7,
+            maxOutputTokens: options.maxTokens ?? 2000,
+          },
+        };
+
+        const response = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          const errorText = await response.text().catch(() => "");
+          if (response.status === 404 || response.status === 503) continue;
+          throw new Error(`Gemini API error [${response.status}]: ${errorText.slice(0, 200)}`);
+        }
+
+        const data = await response.json();
+        return data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      } finally {
+        clearTimeout(timeout);
+      }
+    }
+    return "";
+  }
 }

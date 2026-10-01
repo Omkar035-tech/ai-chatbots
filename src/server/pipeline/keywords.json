@@ -1,0 +1,41 @@
+{
+  "fail": [
+    "fail", "failed", "died", "dead", "death", "lost", "choked", "threw",
+    "throw", "unlucky", "fell", "game over", "wiped", "misclick", "missed",
+    "down", "eliminated", "spectating"
+  ],
+  "jumpscare": [
+    "jumpscare", "scared", "scream", "screaming", "jumped", "holy shit",
+    "heart attack", "terrifying", "creepy", "spooky", "ahhh", "what was that",
+    "freaked me out", "behind you"
+  ],
+  "rage": [
+    "hate this game", "i'm done", "im done", "i quit", "unbelievable", "broken",
+    "cheating", "hacker", "bullshit", "rage", "trash", "rigged", "uninstall",
+    "garbage", "are you kidding", "worst game", "desk slam", "controller"
+  ],
+  "win": [
+    "clutch", "win", "won", "victory", "we did it", "easy", "gg", "lets go",
+    "let's go", "champion", "record", "clean", "insane", "god gamer", "he is him",
+    "flawless", "ace", "headshot"
+  ],
+  "funny": [
+    "funny", "pregnant", "cooked", "table", "fell from", "fell off", "potato",
+    "turned into", "george", "joke", "wtf", "lmao", "what did i just",
+    "clip that", "no way did he", "hilarious", "crying", "cant breathe",
+    "bro what", "caught in 4k", "sus", "pause", "ayo", "wild"
+  ],
+  "question": [
+    "chat what do you think", "what should i do", "is this real", "should i",
+    "which one", "who is", "what is", "where do i go", "left or right",
+    "what do you mean", "can someone tell me", "am i crazy"
+  ],
+  "greeting": [
+    "hello", "welcome", "hey everyone", "stream started", "how is everyone",
+    "good morning", "good evening", "yo chat", "whats up guys"
+  ],
+  "story": [
+    "so yesterday", "the other day", "listen to this", "story time", "remember when",
+    "true story", "i swear", "funny thing happened"
+  ]
+}

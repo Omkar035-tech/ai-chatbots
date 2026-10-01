@@ -1,0 +1,4802 @@
+[
+  {
+    "id": "seed_f_1",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "bro wtf",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_2",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "what are you talking about",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_3",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "ooh hell nah",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_4",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} cooked without oil",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_f_5",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "question_asker",
+    "text": "{subject} which month",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_f_6",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "question_asker",
+    "text": "wait {subject} is a guy??",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_f_7",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "chat did he just say that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_8",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "LMAOOOO",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_9",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "rip {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_f_10",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "ok who let {subject} near the table",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_f_11",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "??",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_12",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "huh??",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_13",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "nah that caught me off guard",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_14",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "im actually crying",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_15",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "AYOOO",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_16",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "{subject} WHAT",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_f_17",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "someone clip that rn",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_18",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "how does {subject} manage that",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_f_19",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "meme_spammer",
+    "text": "caught in 4k",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_20",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "pause bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_21",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "my brain stopped working",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_22",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "wild",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_23",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "NO SHOT HE SAID THAT",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_f_24",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} is innocent i swear",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_f_25",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "my sides hurt",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_1",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "classic",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_2",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "controller through the monitor",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_3",
+    "event_type": "rage",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "DESK SLAM INCOMING",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_4",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "unlucky fr",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_5",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "the hitboxes are rigged",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_6",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "skill issue tbh",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_7",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "dont check his blood pressure rn",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_8",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "blaming the game again lol",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_9",
+    "event_type": "rage",
+    "intensity": 9,
+    "style_tag": "lowercase_casual",
+    "text": "he is about to uninstall",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_10",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "calm down",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_11",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "breathe",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_12",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "ACTUAL RAGE QUIT",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_13",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "bro is fuming",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_14",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "rip headset",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_15",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "game is broken ngl",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_16",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "go drink some water",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_17",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "oof",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_18",
+    "event_type": "rage",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "DO NOT SLAM THE DESK",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_19",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "we go again",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_r_20",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "one more try",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_1",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "MY EARS",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_2",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "I JUMPED",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_3",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "bro gasped for air",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_4",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "heart rate 180",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_5",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "nah i spilled my water",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_6",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "not the scream",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_7",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "IM DEAF NOW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_8",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "screamed like a goat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_9",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "holy",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_j_10",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "WHAT WAS THAT THING",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_1",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "CLEAN",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_2",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "W STREAMER",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_3",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "ez",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_4",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "actual god gamer",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_5",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "clip that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_6",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "never doubted",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_7",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "ez claps",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_8",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "ACTUAL CINEMA",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_9",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "LETS GOOO",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_10",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "built different",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_11",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "what a clutch",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_12",
+    "event_type": "win",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "pog",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_13",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "how did you survive that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_14",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "clutch god",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_w_15",
+    "event_type": "win",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "nice play",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_1",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "oof",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_2",
+    "event_type": "fail",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "choked so hard",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_3",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "bro forgot how to breathe",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_4",
+    "event_type": "fail",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "spectator mode speedrun",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_5",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "how did you miss that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_6",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "F in the chat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_7",
+    "event_type": "fail",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "not like this",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_8",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "back to the lobby",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_9",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "bro fell off",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_fail_10",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "pain",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_1",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "def go left",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_2",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "save your gold",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_3",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "try jumping off",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_4",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "upgrade the sword first",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_5",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "google it bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_6",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "chat says no",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_7",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "yes do it",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_8",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "nah bad idea",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_9",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "100% yes",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_10",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "look behind you",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_q_11",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "check inventory",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_1",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "hi chat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_2",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "yo yo",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_3",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "question_asker",
+    "text": "what game is this",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_4",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "just tuned in",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_5",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "stream looks clean today",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_6",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "lurking while doing homework",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_7",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "gn everyone",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_8",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "how long have you been playing",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_9",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "good afternoon chat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_a_10",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "whats the plan today",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_cb_1",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "still thinking about {subject} lol",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_cb_2",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "question_asker",
+    "text": "{subject} update?",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_cb_3",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "how is {subject} doing",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_cb_4",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "never forget {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_cb_5",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "bro {subject} was crazy",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_107",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "bro what am i witnessing",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_108",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "this is cinema",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_109",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "i cant with this stream",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_110",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "wait let him cook",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_111",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he is not cooking",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_112",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "burnt the whole kitchen",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_113",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} was not ready for that",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_114",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "someone check on {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_115",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "who told {subject} to do that",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_116",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "that caught me off guard lmaooo",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_117",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "actual fever dream",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_118",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "am i hallucinating",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_119",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "the lore is getting deep",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_120",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "average {subject} moment",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_121",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "not {subject} again",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_122",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "i walked away for 2 seconds and {subject} happened",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_123",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "what did i just walk into",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_124",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "context pls???",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_125",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "someone explain {subject} to me",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_126",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "this is unhinged",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_127",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "bro is speaking in tongues",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_128",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "are we deadass right now",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_129",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} is wild for that",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_130",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "nah {subject} got no chill",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_131",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "peak comedy",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_132",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "i dropped my drink",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_133",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "actually choking",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_134",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "help meeee",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_135",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "call 911 for {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_136",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "bro folded like a lawn chair",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_137",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "zero hesitation from {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_138",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he really did that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_139",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "controller through drywall",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_140",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he is so tilted",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_141",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "blaming the ping again",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_142",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "actual 200 ping excuse",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_143",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "his face is so red rn",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_144",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "steam coming out his ears",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_145",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "unlucky spawn bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_146",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "the game just hates you",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_147",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "literally unplayable",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_148",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he is screaming at pixels",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_149",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "desk slam counter: 14",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_150",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "keyboard survived that?",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_151",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he gonna break something",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_152",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "take a deep breath",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_153",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "calm down gamer",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_154",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "its just a game bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_155",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he is not having fun",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_156",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "alt f4 incoming",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_157",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "someone mute his mic",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_158",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "the vein on his forehead is popping",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_159",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he about to cry",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_160",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "rigged lobby",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_161",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "skill issue at its finest",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_162",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "certified choke",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_163",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "dont check his blood pressure",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_164",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "someone call his mom",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_165",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he needs a nap",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_166",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "I DROPPED MY PHONE",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_167",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "ACTUAL HEART ATTACK",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_168",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "WHY DID IT MAKE THAT SOUND",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_169",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "MY SOUL LEFT MY BODY",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_170",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "BRO SCREAMED IN LOWERCASE",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_171",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "HEART RATE: 210",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_172",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "NEVER PLAYING THIS GAME",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_173",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "TURN THE LIGHTS ON",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_174",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "NAH I ALMOST DIED",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_175",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "NOT THE CORNER",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_176",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "LOOK BEHIND YOU RIGHT NOW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_177",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "IT HEARS YOU",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_178",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "DONT TURN AROUND",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_179",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "BRO FROZE IN REAL LIFE",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_180",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "WATER SPILLED EVERYWHERE",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_181",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "MY CAT JUMPED OFF THE BED",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_182",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "IM SHAKING RN",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_183",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "THAT WAS SO LOUD",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_184",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "NEVER IN DOUBT",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_185",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "ACTUAL PRO PLAYER",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_186",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "HOW DID HE HIT THAT",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_187",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "CLEANEST PLAY OF THE YEAR",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_188",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "CLIP THAT RIGHT NOW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_189",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "GIGACHAD GAMER",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_190",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "HE IS IN THE MATRIX",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_191",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "REPORT HIM FOR AIMBOT",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_192",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "HE DOES NOT MISS",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_193",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "ABSOLUTE DOMINATION",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_194",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "FLAWLESS ROUND",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_195",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "THEY HAD FAMILIES BRO",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_196",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "HE CARRIED SO HARD",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_197",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "PUT THAT ON YOUTUBE",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_198",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "W IN THE CHAT BOYS",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_199",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "NO SWEAT",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_200",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "HE MADE IT LOOK EASY",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_201",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "WHAT A GOD",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_202",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "EZ CLAPSSS",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_203",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "how did we lose that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_204",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "it was a 1v1 bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_205",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "spectating pain",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_206",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "he looked at the floor",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_207",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "he forgot to shoot",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_208",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "reloaded in front of them",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_209",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "missed all 30 bullets",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_210",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "accuracy: 0%",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_211",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "the panic was real",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_212",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "back to iron rank",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_213",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "uninstall speedrun any%",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_214",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "he gave them the win",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_215",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "pro gamer moves",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_216",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "F for our fallen soldier",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_217",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "sadge",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_218",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "hurts to watch",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_219",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "choked harder than ever",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_220",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "gg go next",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_221",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "it is what it is",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_222",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "definitely go left",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_223",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "right side has better loot",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_224",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "dont forget your armor",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_225",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "save your money for later",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_226",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "buy the potion first",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_227",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "talk to that npc",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_228",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "jump off the cliff it gives secret loot",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_229",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "dont listen to chat bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_230",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "check behind the waterfall",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_231",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "crouch under the door",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_232",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "use the shotgun",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_233",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "sniper is useless here",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_234",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "drink some water first",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_235",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "check map",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_236",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "look up",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_237",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "how is everyone doing today",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_238",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "good vibes today",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_239",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "just finished work",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_240",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "anyone else having dinner while watching",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_241",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "what rank are you currently",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_242",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "music is so chill",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_243",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "stream quality looks crisp",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_244",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "w stream as always",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_245",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "lurking mode on",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_246",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "hello from germany",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_247",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "hello from india",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_248",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "hello from canada",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_249",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "who is still awake",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_250",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "late night stream hits different",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_251",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "what was the score earlier",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_252",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "did i miss any hype moments",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_253",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "whats the schedule for tomorrow",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_254",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "first time chatter here",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_255",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "still thinking about {subject} lol",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_256",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "any updates on {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_257",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "bro {subject} was the highlight of the stream",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_258",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} living rent free in my head",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_259",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} part 2 when?",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_260",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "chat we will never forget {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_261",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} changed my life",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_262",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "i cannot stop laughing about {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_263",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "remember 5 mins ago when {subject} happened",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_264",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} was wild fr",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_emote_265",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "KEKW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_266",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "KEKW KEKW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_267",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "KEKW !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_268",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "lmaooo KEKW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_269",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "OMEGALUL",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_270",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "OMEGALUL OMEGALUL",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_271",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "OMEGALUL !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_272",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "lmaooo OMEGALUL",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_273",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "LULW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_274",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "LULW LULW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_275",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "LULW !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_276",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "lmaooo LULW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_277",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "ICANT",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_278",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "ICANT ICANT",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_279",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "ICANT !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_280",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "lmaooo ICANT",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_281",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "5Head",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_282",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "5Head 5Head",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_283",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "5Head !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_284",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "lmaooo 5Head",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_285",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "monkaS",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_286",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "monkaS monkaS",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_287",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "monkaS !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_288",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "lmaooo monkaS",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_289",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "Copium",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_290",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "Copium Copium",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_291",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "Copium !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_292",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "lmaooo Copium",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_293",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "Sadge",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_294",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "Sadge Sadge",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_295",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "Sadge !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_296",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "lmaooo Sadge",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_297",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "Pepega",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_298",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "Pepega Pepega",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_299",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "Pepega !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_300",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "lmaooo Pepega",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_301",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "Pog",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_302",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "Pog Pog",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_303",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "Pog !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_304",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "lmaooo Pog",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_305",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "PogChamp",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_306",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "PogChamp PogChamp",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_307",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "PogChamp !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_308",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "lmaooo PogChamp",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_309",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "GIGACHAD",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_310",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "GIGACHAD GIGACHAD",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_311",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "GIGACHAD !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_312",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "lmaooo GIGACHAD",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_313",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "Clap",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_314",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "Clap Clap",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_315",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "Clap !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_316",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "lmaooo Clap",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_317",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "monkaW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_318",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "monkaW monkaW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_319",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "monkaW !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_320",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "short_lurker",
+    "text": "lmaooo monkaW",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_321",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "D:",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_322",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "D: D:",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_323",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "D: !!",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_emote_324",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "lmaooo D:",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_325",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "no waaaay",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_326",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "lmaooo",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_327",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "lmaoooooo",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_328",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "broooo",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_329",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "bruhhhh",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_330",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "huhhhh",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_331",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "whaaat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_332",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "whaaaat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_333",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "damnnnn",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_334",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "yooooo",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_335",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "whyyy",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_336",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "nawww",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_337",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "stop ittt",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_338",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "teh game is rigged",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_339",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "wat just happend",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_340",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "omg lol",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_341",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "wait wut",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_342",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "hahahaha",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_343",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "no shotttt",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_344",
+    "event_type": "fail",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he dead",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_345",
+    "event_type": "fail",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "rip",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_346",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "gg",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_347",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "w",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_348",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "l",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_349",
+    "event_type": "fail",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "f",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_350",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "?",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_351",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "short_lurker",
+    "text": "???",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_short_352",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "?????",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_353",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "flawless round",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_354",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "question_asker",
+    "text": "what game is this",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_355",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "someone check on {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_356",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "no shot he said that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_357",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "actually choking",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_358",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "never doubted",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_359",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "game is broken ngl",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_360",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "wild",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_361",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "gigachad gamer",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_362",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "oof",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_363",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "nah i almost died",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_364",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "bro forgot how to breathe",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_365",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "not the corner",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_366",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "still thinking about {subject} lol",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_367",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "actual heart attack",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_368",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "never in doubt",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_369",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "skill issue at its finest",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_370",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "meme_spammer",
+    "text": "caught in 4k",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_371",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "f in the chat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_372",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "actual cinema",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_373",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "dont turn around",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_374",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "??",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_375",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "upgrade the sword first",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_376",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "my sides hurt",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_377",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "calm down",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_378",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "bro forgot how to breathe",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_379",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "{subject} what",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_380",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "question_asker",
+    "text": "{subject} update?",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_381",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "unlucky fr",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_382",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "pause bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_383",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he about to cry",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_384",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "alt f4 incoming",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_385",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "w in the chat boys",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_386",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "that caught me off guard lmaooo",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_387",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "good afternoon chat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_388",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "not {subject} again",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_389",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "look behind you",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_390",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "water spilled everywhere",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_391",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "never doubted",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_392",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "hi chat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_393",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "heart rate: 210",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_394",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "desk slam counter: 14",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_395",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "skill issue tbh",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_396",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "desk slam counter: 14",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_397",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "actual pro player",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_398",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "what was that thing",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_399",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "rigged lobby",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_400",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "hi chat",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_401",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "never forget {subject}",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_402",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "nah i almost died",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_403",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "still thinking about {subject} lol",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_404",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "am i hallucinating",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_405",
+    "event_type": "fail",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "spectator mode speedrun",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_406",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "i jumped",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_407",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "put that on youtube",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_408",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "still thinking about {subject} lol",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_409",
+    "event_type": "win",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "w streamer",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_410",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "never playing this game",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_411",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "skill issue at its finest",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_412",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "my brain stopped working",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_413",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "unlucky spawn bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_414",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "question_asker",
+    "text": "{subject} which month",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_415",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "clutch god",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_416",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "still thinking about {subject} lol",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_417",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "we go again",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_418",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "not {subject} again",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_419",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "bro folded like a lawn chair",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_420",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "i dropped my phone",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_421",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "100% yes",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_422",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "the lore is getting deep",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_423",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "ok who let {subject} near the table",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_424",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "ok who let {subject} near the table",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_425",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "peak comedy",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_426",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "game is broken ngl",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_427",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "try jumping off",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_428",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "i dropped my phone",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_429",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "built different",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_430",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "bro screamed in lowercase",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_431",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "no shot he said that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_432",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "my soul left my body",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_433",
+    "event_type": "rage",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "do not slam the desk",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_434",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "heart rate: 210",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_435",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "that caught me off guard lmaooo",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_436",
+    "event_type": "fail",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "choked so hard",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_437",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "am i hallucinating",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_438",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "never in doubt",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_439",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "this is cinema",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_440",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "oof",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_441",
+    "event_type": "funny",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "my brain stopped working",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_442",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "one more try",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_443",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "look behind you",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_444",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "average {subject} moment",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_445",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "pain",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_446",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "my ears",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_447",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "game is broken ngl",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_448",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "look behind you right now",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_449",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} cooked without oil",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_450",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "ayooo",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_451",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "turn the lights on",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_452",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "bro folded like a lawn chair",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_453",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he is not having fun",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_454",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "clip that right now",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_455",
+    "event_type": "fail",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "spectator mode speedrun",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_456",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he really did that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_457",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "ooh hell nah",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_458",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "someone mute his mic",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_459",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "someone explain {subject} to me",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_460",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he needs a nap",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_461",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "gn everyone",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_462",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "actual pro player",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_463",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "this is unhinged",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_464",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "nah i spilled my water",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_465",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "wild",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_466",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "it hears you",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_467",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "blaming the game again lol",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_468",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "question_asker",
+    "text": "{subject} update?",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_469",
+    "event_type": "jumpscare",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "holy",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_470",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "how did he hit that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_471",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "upgrade the sword first",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_472",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "how long have you been playing",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_473",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "no shot he said that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_474",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "chat did he just say that",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_475",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "controller through the monitor",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_476",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "question_asker",
+    "text": "what game is this",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_477",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "dont turn around",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_478",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "question_asker",
+    "text": "wait {subject} is a guy??",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_479",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "am i hallucinating",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_480",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "unlucky spawn bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_481",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "bro {subject} was crazy",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_482",
+    "event_type": "fail",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "spectator mode speedrun",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_483",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "lowercase_casual",
+    "text": "bro {subject} was crazy",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_484",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "wait let him cook",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_485",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "actual heart attack",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_486",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "average {subject} moment",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_487",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "short_lurker",
+    "text": "huh??",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_488",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "actual heart attack",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_489",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "steam coming out his ears",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_490",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "nah bad idea",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_491",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "what a clutch",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_492",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "save your gold",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_493",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "question_asker",
+    "text": "what game is this",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_494",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "never doubted",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_495",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "the lore is getting deep",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_496",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "ooh hell nah",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_497",
+    "event_type": "question",
+    "intensity": 6,
+    "style_tag": "lowercase_casual",
+    "text": "google it bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_498",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "alt f4 incoming",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_499",
+    "event_type": "funny",
+    "intensity": 4,
+    "style_tag": "question_asker",
+    "text": "{subject} update?",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_500",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "skill issue at its finest",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_501",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "unlucky fr",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_502",
+    "event_type": "win",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "nice play",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_503",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "someone explain {subject} to me",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_504",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "pause bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_505",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "question_asker",
+    "text": "{subject} which month",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_506",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "desk slam counter: 14",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_507",
+    "event_type": "ambient",
+    "intensity": 3,
+    "style_tag": "lowercase_casual",
+    "text": "gn everyone",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_508",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "he gonna break something",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_509",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "what are you talking about",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_510",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "keyboard survived that?",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_511",
+    "event_type": "win",
+    "intensity": 8,
+    "style_tag": "caps_hype",
+    "text": "flawless round",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_512",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "rigged lobby",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_513",
+    "event_type": "rage",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "skill issue tbh",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_514",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "short_lurker",
+    "text": "calm down",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_515",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "pause bro",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_516",
+    "event_type": "rage",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "we go again",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_517",
+    "event_type": "jumpscare",
+    "intensity": 9,
+    "style_tag": "caps_hype",
+    "text": "bro screamed in lowercase",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_518",
+    "event_type": "fail",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "bro forgot how to breathe",
+    "moment_id": "-",
+    "slots": []
+  },
+  {
+    "id": "seed_dup_519",
+    "event_type": "funny",
+    "intensity": 7,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} is innocent i swear",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  },
+  {
+    "id": "seed_dup_520",
+    "event_type": "funny",
+    "intensity": 8,
+    "style_tag": "lowercase_casual",
+    "text": "{subject} is wild for that",
+    "moment_id": "-",
+    "slots": [
+      "subject"
+    ]
+  }
+]

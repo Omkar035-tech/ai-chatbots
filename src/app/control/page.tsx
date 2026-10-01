@@ -6,6 +6,7 @@ import { useQuery, useMutation, useSubscription } from "@apollo/client/react";
 import { useSTTAdapter } from "@/hooks/useSTTAdapter";
 import { ControlSlider } from "@/components/ControlSlider";
 import { DirectorPanel } from "@/components/DirectorPanel";
+import { HypeDebugPanel } from "@/components/HypeDebugPanel";
 import { ProviderStats, ProviderStatItem } from "@/components/ProviderStats";
 import { ChatLine } from "@/components/ChatLine";
 import {
@@ -136,6 +137,32 @@ const CHAT_SUBSCRIPTION = gql`
   }
 `;
 
+const HYPE_TELEMETRY_SUBSCRIPTION = gql`
+  subscription OnHypeTelemetryControl {
+    hypeTelemetry {
+      score
+      state
+      signals {
+        name
+        value
+        weight
+        contribution
+      }
+      momentQuote
+      eventType
+      intensity
+      tierUsed
+      bankTotalCount
+      bankUnusedCount
+      batchCyclesLastHour
+      reactiveCallsLastHour
+      totalApiCallsLastHour
+      blockedRequestsCount
+      ts
+    }
+  }
+`;
+
 export default function ControlPage() {
   const [simulatedInput, setSimulatedInput] = useState("");
   const [liveTranscript, setLiveTranscript] = useState("");
@@ -205,6 +232,16 @@ export default function ControlPage() {
     onData: ({ data }: any) => {
       if (data?.data?.chatMessage) {
         setChatMessages((prev) => [data.data.chatMessage, ...prev].slice(0, 20));
+      }
+    },
+  });
+
+  const [hypeTelemetry, setHypeTelemetry] = useState<any>(null);
+
+  useSubscription(HYPE_TELEMETRY_SUBSCRIPTION, {
+    onData: ({ data }: any) => {
+      if (data?.data?.hypeTelemetry) {
+        setHypeTelemetry(data.data.hypeTelemetry);
       }
     },
   });
@@ -639,6 +676,9 @@ export default function ControlPage() {
                 </p>
               </div>
             </div>
+
+            {/* Live Multi-Signal Hype Detector & Three-Tier Debug Panel */}
+            <HypeDebugPanel telemetry={hypeTelemetry} />
 
             {/* AI Director Decision Card */}
             <DirectorPanel decision={directorDecision} />

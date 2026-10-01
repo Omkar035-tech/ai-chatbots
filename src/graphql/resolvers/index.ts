@@ -27,6 +27,9 @@ export const resolvers = {
     recentChat: async (_: any, { limit = 25 }: { limit?: number }) => {
       return await personaStore.getRecentChat(limit);
     },
+    hypeTelemetry: () => {
+      return pipelineOrchestrator.getTelemetry();
+    },
   },
   Mutation: {
     updateSettings: async (_: any, { input }: { input: any }) => {
@@ -79,6 +82,10 @@ export const resolvers = {
     },
     providerStats: {
       subscribe: () => pubSub.subscribe("providerStats"),
+      resolve: (payload: any) => payload,
+    },
+    hypeTelemetry: {
+      subscribe: () => pubSub.subscribe("hypeTelemetry"),
       resolve: (payload: any) => payload,
     },
   },

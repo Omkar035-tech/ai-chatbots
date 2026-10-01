@@ -34,6 +34,30 @@ export const typeDefs = /* GraphQL */ `
     active: Boolean!
   }
 
+  type SignalBreakdown {
+    name: String!
+    value: Float!
+    weight: Float!
+    contribution: Float!
+  }
+
+  type HypeTelemetry {
+    score: Float!
+    state: String!
+    signals: [SignalBreakdown!]!
+    momentQuote: String
+    eventType: String
+    intensity: Int
+    tierUsed: String
+    bankTotalCount: Int!
+    bankUnusedCount: Int!
+    batchCyclesLastHour: Int!
+    reactiveCallsLastHour: Int!
+    totalApiCallsLastHour: Int!
+    blockedRequestsCount: Int!
+    ts: Float!
+  }
+
   type Settings {
     botCount: Int!
     momentDepth: Int!
@@ -57,6 +81,7 @@ export const typeDefs = /* GraphQL */ `
     activePersonas: [Persona!]!
     providerStats: [ProviderStat!]!
     recentChat(limit: Int = 25): [ChatMessage!]!
+    hypeTelemetry: HypeTelemetry!
   }
 
   type Mutation {
@@ -72,5 +97,6 @@ export const typeDefs = /* GraphQL */ `
     directorDecision: DirectorDecision!
     rosterUpdated: [Persona!]!
     providerStats: [ProviderStat!]!
+    hypeTelemetry: HypeTelemetry!
   }
 `;

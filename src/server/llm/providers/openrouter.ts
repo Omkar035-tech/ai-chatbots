@@ -102,4 +102,57 @@ export class OpenRouterProvider implements LLMProvider {
 
     throw lastError || new Error("All OpenRouter models failed");
   }
+
+  async completeRaw(options: LLMRequestOptions): Promise<string> {
+    const apiKey = config.openrouter.apiKey;
+    if (!apiKey) throw new Error("OPENROUTER_API_KEY is not configured");
+
+    const primaryModel = config.openrouter.model || "liquid/lfm-2.5-2.6b:free";
+    const modelsToTry = [
+      primaryModel,
+      "google/gemini-2.0-flash-exp:free",
+      "meta-llama/llama-3.3-70b-instruct:free",
+      "mistralai/mistral-7b-instruct:free",
+    ].filter((m, i, arr) => arr.indexOf(m) === i);
+
+    for (const model of modelsToTry) {
+      const url = `${config.openrouter.baseUrl}/chat/completions`;
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), options.timeoutMs ?? 10000);
+
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": "application/json",
+            "HTTP-Referer": "http://localhost:3002",
+            "X-Title": "CrowdChat",
+          },
+          body: JSON.stringify({
+            model,
+            messages: [
+              { role: "system", content: options.systemPrompt },
+              { role: "user", content: options.userPrompt },
+            ],
+            temperature: options.temperature ?? 0.7,
+            max_tokens: options.maxTokens ?? 2000,
+          }),
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          const errText = await response.text().catch(() => "");
+          if (response.status === 404 || response.status === 429) continue;
+          throw new Error(`OpenRouter API error [${response.status}]: ${errText.slice(0, 200)}`);
+        }
+
+        const data = await response.json();
+        return data.choices?.[0]?.message?.content || "";
+      } finally {
+        clearTimeout(timeout);
+      }
+    }
+    return "";
+  }
 }
