@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/_global-error/page": "/_global-error",
+  "/api/graphql/route": "/api/graphql",
+  "/api/transcribe/route": "/api/transcribe",
+  "/control/page": "/control",
+  "/overlay/page": "/overlay",
+  "/page": "/"
+}

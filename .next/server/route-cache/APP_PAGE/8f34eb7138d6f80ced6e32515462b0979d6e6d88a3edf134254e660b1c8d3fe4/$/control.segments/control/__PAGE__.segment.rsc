@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:I[1257,[],"ClientPageRoot"]
+3:I[1313,["798","static/chunks/798-bcc1701113fceddd.js","688","static/chunks/688-7a6d1022e58280d2.js","345","static/chunks/345-ed936a04b2aa66b2.js","580","static/chunks/app/control/page-75d094de4224f397.js"],"default"]
+6:I[7721,[],"OutletBoundary"]
+7:"$Sreact.suspense"
+b:I[7721,[],"ViewportBoundary"]
+c:I[7721,[],"MetadataBoundary"]
+e:I[9292,[],""]
+f:I[3658,[],""]
+12:I[6634,["798","static/chunks/798-bcc1701113fceddd.js","123","static/chunks/123-808a3bc67d5ac9ff.js","177","static/chunks/app/layout-08c39f27a762d231.js"],"ApolloWrapper"]
+:HL["/_next/static/css/a1b7860fdc8c516b.css","style"]
+a:X
+11:X
+11:C
+0:{"buildId":"Xv9rzhu9g8yDdTRkJXXDu","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],null,["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":"$@9","staleTime":"$a","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$Lb",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$Lc",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"CrowdChat - AI Fake Stream Chat Portal"}],["$","meta","1",{"name":"description","content":"Simulated stream audience responding to voice in real-time"}]]}]}]}],null]}],"isPartial":"$@d","staleTime":"$a","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Le",null,{"parallelRouterKey":"children","template":["$","$Lf",null,{}]}]]}],"isPartial":"$@10","staleTime":"$a","varyParams":"$11"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a1b7860fdc8c516b.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"min-h-screen bg-[#030712] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black","children":["$","$L12",null,{"children":["$","$Le",null,{"parallelRouterKey":"children","template":["$","$Lf",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]]}],"isPartial":"$@13","staleTime":"$a","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@14","rootVaryParams":null,"needsRuntimeRequest":"$@15"}
+4:{}
+5:"$0:data:0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
+a:300
+15:true
+a:C
+14:0
+d:"$undefined"
+10:"$undefined"
+13:"$undefined"
+9:"$undefined"

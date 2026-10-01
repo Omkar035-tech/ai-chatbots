@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/control/layout,_N_T_/control/page,_N_T_/control"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/control/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/8f34eb7138d6f80ced6e32515462b0979d6e6d88a3edf134254e660b1c8d3fe4/$/control",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/control/page"
+    },
+    "isFallback": false
+  }
+}

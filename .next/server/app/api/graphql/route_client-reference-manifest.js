@@ -1,0 +1,1 @@
+globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/api/graphql/route"]={"moduleLoading":{"prefix":"/_next/"},"ssrModuleMapping":{},"edgeSSRModuleMapping":{},"clientModules":{},"entryCSSFiles":{"/Users/omkar-dev/Applications/ai-chatbots/src/app/api/graphql/route":[]},"rscModuleMapping":{},"edgeRscModuleMapping":{}};

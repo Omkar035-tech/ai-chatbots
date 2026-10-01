@@ -1,0 +1,20 @@
+1:"$Sreact.fragment"
+2:I[6634,["798","static/chunks/798-bcc1701113fceddd.js","123","static/chunks/123-808a3bc67d5ac9ff.js","177","static/chunks/app/layout-08c39f27a762d231.js"],"ApolloWrapper"]
+3:I[9292,[],""]
+4:I[3658,[],""]
+5:I[1257,[],"ClientPageRoot"]
+6:I[1313,["798","static/chunks/798-bcc1701113fceddd.js","688","static/chunks/688-7a6d1022e58280d2.js","345","static/chunks/345-ed936a04b2aa66b2.js","580","static/chunks/app/control/page-75d094de4224f397.js"],"default"]
+9:I[7721,[],"OutletBoundary"]
+a:"$Sreact.suspense"
+d:I[7721,[],"ViewportBoundary"]
+f:I[7721,[],"MetadataBoundary"]
+11:I[9560,[],"default",1]
+:HL["/_next/static/css/a1b7860fdc8c516b.css","style"]
+c:X
+0:{"P":null,"c":["","control"],"q":"","i":false,"f":[[["",{"children":["control",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a1b7860fdc8c516b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"min-h-screen bg-[#030712] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black","children":["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[["$","$L5",null,{"Component":"$6","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@7","$@8"]}}],null,["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]]}],{},null,false,null]},null,false,"$c"]},null,false,null],["$","$1","h",{"children":[null,["$","$Ld",null,{"children":"$Le"}],["$","div",null,{"hidden":true,"children":["$","$Lf",null,{"children":["$","$a",null,{"name":"Next.Metadata","children":"$L10"}]}]}],null]}],false]],"m":"$undefined","G":["$11",[]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"Xv9rzhu9g8yDdTRkJXXDu"}
+c:C
+7:{}
+8:"$0:f:0:1:1:children:1:children:0:props:children:0:props:serverProvidedParams:params"
+e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+10:[["$","title","0",{"children":"CrowdChat - AI Fake Stream Chat Portal"}],["$","meta","1",{"name":"description","content":"Simulated stream audience responding to voice in real-time"}]]

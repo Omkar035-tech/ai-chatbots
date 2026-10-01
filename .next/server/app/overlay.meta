@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/overlay/layout,_N_T_/overlay/page,_N_T_/overlay"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/overlay/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/2e1ba61026b40678052913011c664e91b95a89eb494d26309bb3d941b811dcc1/$/overlay",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/overlay/page"
+    },
+    "isFallback": false
+  }
+}

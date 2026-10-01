@@ -1,0 +1,1 @@
+globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/api/transcribe/route"]={"moduleLoading":{"prefix":"/_next/"},"ssrModuleMapping":{},"edgeSSRModuleMapping":{},"clientModules":{},"entryCSSFiles":{"/Users/omkar-dev/Applications/ai-chatbots/src/app/api/transcribe/route":[]},"rscModuleMapping":{},"edgeRscModuleMapping":{}};
